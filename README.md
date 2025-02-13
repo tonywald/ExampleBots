@@ -29,8 +29,8 @@ public Ability saysHelloWorld() {
     return Ability.builder()
         .name("hello") // Name and command (/hello)
         .info("Says hello world!") // Necessary if you want it to be reported via /commands
-        .privacy(PUBLIC)  // Choose from Privacy Class (Public, Admin, Creator)
-        .locality(ALL) // Choose from Locality enum Class (User, Group, PUBLIC)
+        .privacy(PUBLIC)  // Choose from Privacy enumm Class (PUBLIC, GROUP_ADMIN, ADMIN, CREATOR)
+        .locality(ALL) // Choose from Locality enum Class (USER, GROUP, ALL)
         .input(0) // Arguments required for command (0 for ignore)
         .action(ctx -> {
           /*
